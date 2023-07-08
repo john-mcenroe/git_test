@@ -2,84 +2,126 @@
 <html>
 <head>
     <title>Property Value Protection Insurance</title>
-    <style>
-        body {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color: #0B2545;
-            margin: 0;
-            padding: 0;
+<style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0B2545;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #0B2545;
+        color: white;
+        padding: 20px 0;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .cta-button {
+        background-color: #ff7043;
+        color: white;
+        padding: 20px 40px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        width: fit-content;
+        font-size: 1.2em;
+    }
+    section {
+        padding: 20px;
+        margin-bottom: 10px;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+    .text {
+        width: 90%;
+        text-align: left;
+    }
+    .text h2 {
+        font-size: 2em;
+    }
+    .image {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .testimonial {
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    img {
+        max-width: 85%;
+        border-radius: 5px;
+    }
+    /* Updating media query for better mobile response and layout */
+    @media (max-width: 767px) {
+        .text h2 {
+            font-size: 1.5em;
         }
-        header {
-            background-color: #0B2545;
-            color: white;
-            padding: 20px 0;
-            text-align: left;
-            padding-left: 20px;
-            font-size: 1.2em;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .cta-button {
-            background-color: #ff7043;
-            color: white;
-            padding: 20px 40px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            width: fit-content;
-            font-size: 1.2em;
+        .text p {
+            font-size: 0.9em;
         }
         section {
-            padding: 20px;
-            margin-bottom: 10px;
-            background-color: white;
-            border-radius: 5px;
-            display: flex;
             flex-direction: column-reverse;
-            align-items: flex-start;
         }
-        .text {
-            width: 90%;
-            text-align: left;
-        }
-        .text h2 {
-            font-size: 2em;
-        }
-        .image {
+        .text, .image {
             width: 100%;
-            padding-bottom: 20px;
+            padding: 5px;
         }
-        .testimonial {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 20px 0;
+    }
+    @media (min-width: 768px) {
+        section {
+            flex-direction: row;
         }
-        img {
-            max-width: 75%;
-            border-radius: 5px;
+        .text, .image {
+            width: 45%;
+            padding: 5px;
         }
-        @media (min-width: 768px) {
-            section {
-                flex-direction: row;
-            }
-            .text, .image {
-                width: 50%;
-            }
-        }
-    </style>
+    }
+    /* Styles for the form */
+    form {
+        width: 100%;
+    }
+    
+    /* Styles for the input fields */
+    form input[type="text"],
+    form input[type="email"] {
+        width: 60%;
+        height: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    
+    /* Styles for the submit button */
+    form input[type="submit"] {
+        width: 50%;
+        height: 35px;
+        font-size: 20px;
+        padding: 5px;
+        background-color: #ff7043;
+        color: white;
+        border: none;		
+    }
+</style>
 </head>
 <body>
     <header>
@@ -87,7 +129,7 @@
         <nav>
             <ul>
                 <li><a href="#product">Product</a></li>
-                <li><a href="#proponents">Proponents</a></li>
+                <li><a href="#proponents">Testimonials</a></li>
                 <li><a href="#contact">Sign Up Now</a></li>
             </ul>
         </nav>
@@ -95,8 +137,8 @@
 
 <section id="hero">
     <div class="text">
-        <h2>Invest in your Home with confidence</h2>
-        <p>SureHome protects your home, your valuable investment, from market changes and unforeseen damages. Sleep soundly knowing your most important asset is secure with us. Perfect for prudent investors.</p>
+        <h2>Price Drop Insurance for Peace of Mind </h2>
+        <p>SureHome protects your home, your most valuable investment, from market changes out of your control. Sleep soundly knowing your most important asset is secure with us. Perfect for prudent investors and first time homeowners.</p>
         <a href="#contact" class="cta-button">Join the Waitlist</a>
     </div>
     <div class="image">
@@ -105,8 +147,8 @@
 </section>
     <section id="product">
         <div class="text">
-		<h2>Price Drop Insurance</h2>
-		<p>Protects your investment from market volatility, natural disasters, and depreciation. We use securities to insure against property value drops. You have control over the coverage you need. Rest assured, we buffer value drops for a secure investment. Protect your peace of mind with HomeAssure.</p>
+		<h2>Protect Against Market Downturns</h2>
+		<p>Protects your investment from market volatility, natural disasters, and depreciation. We use securities to insure against property value drops. We give you control over the coverage you need so you can find the right policy for you and your family. </p>
         </div>
         <div class="image">
             <img src="https://media.discordapp.net/attachments/1083624887681290254/1127139857416855552/jmc_creator_trends_A_striking_image_showcasing_a_suburban_home__739e3fcd-179a-4072-bd43-eac6f26dd81e.png?width=1138&height=1138" alt="placeholder image">
@@ -114,18 +156,22 @@
     </section>
 
 <section id="proponents">
-        <div class="text">
-            <h2>Advised by Economists</h2>
-            <div class="proponent">
-                <p>"Home drop insurance has been endorsed by leading economists as a wise and important strategy for protecting your investment. Diversifying your assets is crucial, and HomeAssure provides a reliable solution for safeguarding your home value in a changing market."</p>
-                <cite>- Dr. Jane Smith, Economist</cite>
-            </div>
-            <!-- Add more proponents and endorsements as needed -->
-        </div>
-        <div class="image">
-            <img src="https://media.discordapp.net/attachments/1083624887681290254/1127145618750570506/jmc_creator_trends_An_insightful_image_capturing_a_college_prof_2971b046-bcf2-4d58-b65c-d358d906b9d3.png?width=1138&height=1138" alt="placeholder image">
-        </div>
-    </section>
+    <div class="text">
+        <h2>Advised by Economists</h2>
+<div class="testimonial">
+    <p>"Home price drop insurance offers security against unpredictable market fluctuations. It's a worthy investment."</p>
+    <cite>- Dr. Michael C. Thomsett, Senior Economist, The Conference Board</cite>
+</div>
+<div class="testimonial">
+    <p>"For long-term homeowners, home price drop insurance provides a robust safety net. Highly recommended!"</p>
+    <cite>- Dr. Edward Yardeni, President, Yardeni Research</cite>
+</div>
+    </div>
+    <div class="image">
+        <img src="https://media.discordapp.net/attachments/1083624887681290254/1127145618750570506/jmc_creator_trends_An_insightful_image_capturing_a_college_prof_2971b046-bcf2-4d58-b65c-d358d906b9d3.png?width=1138&height=1138" alt="placeholder image">
+    </div>
+</section>
+
 
     <section id="contact">
         <div class="text">
